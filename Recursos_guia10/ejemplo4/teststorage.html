@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Prueba de almacenamiento local</title>
+ <meta charset="utf-8" />
+ <link rel="stylesheet" href="css/base.css" />
+ <script src="appform.js"></script>
+</head>
+<body>
+<section>
+<article>
+<form name="regestryform">
+<fieldset id="myform">
+<legend>Datos personales</legend>
+<ul class="formset">
+ <li>
+ <label for="name">Nombre:</label>
+ <input type="text" name="name" id="name" placeholder="(Su nombre)" />
+ </li>
+ <li>
+ <label for="age">Edad:</label>
+ <input type="number" name="age" id="age" placeholder="(Su edad)" />
+</li>
+ </li>
+ <li>
+ <input type="button" id="add" value="Añadir" onclick="Javascript:save()">
+ <input type="button" id="get" value="Obtener" onclick="Javascript:obtain()">
+ <input type="button" id="del" value="Remover" onclick="Javascript:remove()">
+ <input type="button" id="clear" value="Limpiar" onclick="Javascript:clearStorage()">
+ </li>
+ <li>
+ <input type="button" id="saveC" value="Guardar dato complejo" onclick="Javascript:saveComplexData()">
+ <input type="button" id="restoreC" value="Restaurar dato complejo" onclick="Javascript:restoreComplexData()">
+ <input type="button" id="sArray" value="Guardar arreglo" onclick="Javascript:saveArrayData()">
+ <input type="button" id="rArray" value="Restaurar arreglo" onclick="Javascript:restoreArrayData()">
+ </li>
+</ul>
+</fieldset>
+</form>
+<div id="state"></div>
+</article>
+</section>
+</body>
+</html>

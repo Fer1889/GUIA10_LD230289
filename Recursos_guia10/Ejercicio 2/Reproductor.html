@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Reproductor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Formulario Reproductor</h2>
+    <div class="marquee-container">
+        <span class="marquee" id="info-cancion">
+        </span>
+    </div>
+    <form id="form-reproductor">
+        <label for="nombre">Nombre del Artista:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+            <option value="">Seleccione un género</option>
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Reggaeton">Reggaetón</option>
+            <option value="Salsa">Salsa</option>
+            <option value="Cumbia">Cumbia</option>
+            <option value="Electrónica">Electrónica</option>
+            <option value="Otro">Otro</option>
+        </select>
+
+    <label for="cancion">Nombre de la Canción:</label>
+    <textarea id="cancion" name="cancion" rows="2" style="resize:none; height:32px;"></textarea>
+
+        <button type="submit">Guardar</button>
+    </form>
+    <script src="js/Reproductor.js"></script>
+</body>
+</html>
